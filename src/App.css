@@ -30,3 +30,53 @@ a {
 .btn:hover {
   background: #666;
 }
+
+@media only screen and (max-width: 992px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  ul.navbar-links {
+    margin-right: 0;
+    position: absolute;
+    width: 75%;
+    background: whitesmoke;
+    z-index: 99;
+    margin-top: 3rem;
+    float: right;
+    right: 0;
+    height: 100vh;
+    transition: all ease-in-out 0.3s;
+    align-self: flex-start;
+    border-top: 2px solid maroon;
+  }
+
+  ul.links-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .navbar-links.menu-collapse {
+    margin-right: -75%;
+    width: 0;
+    overflow: hidden;
+  }
+
+  li.nav-item {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+  }
+
+  li.nav-item a.nav-link {
+    padding: 10px 20px;
+  }
+
+  .menu-collapse {
+    margin-right: -75%;
+    width: 0;
+    overflow: hidden;
+  }
+}
